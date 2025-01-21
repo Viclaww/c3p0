@@ -44,7 +44,7 @@ const InfoSection = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap gap-8 px-10 md:px-24">
+    <div className="flex flex-wrap lg:flex-nowrap gap-8 px-10 md:px-24">
       {infos.map((info) => (
         <InfoBoxes
           key={info.head}
