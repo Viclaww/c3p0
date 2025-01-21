@@ -17,9 +17,9 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TruthMatrix AI",
-  description: "A modular network of interoperable DeFi agents",
-  icons: "/matrix.png",
+  title: "C-P30",
+  description:
+    "A modular network of interoperable DeFi agentsSmarter Tools, Trending Insights, and Effortless Trades – All in One Place",
 };
 
 export default function RootLayout({

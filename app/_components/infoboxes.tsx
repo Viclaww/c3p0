@@ -9,7 +9,7 @@ interface InfoBoxprops {
 const InfoBoxes: React.FC<InfoBoxprops> = (props) => {
   return (
     <div
-      className="bg-[#1C1C1C] flex  flex-col gap-5 rounded-2xl p-10"
+      className="bg-[#1C1C1C] hover:animate-border-beam cursor-pointer flex  flex-col gap-5 rounded-2xl p-10"
       key={props.head}
     >
       <Image
@@ -44,7 +44,7 @@ const InfoSection = () => {
     },
   ];
   return (
-    <div className="flex gap-8 px-24">
+    <div className="flex flex-wrap gap-8 px-10 md:px-24">
       {infos.map((info) => (
         <InfoBoxes
           key={info.head}
