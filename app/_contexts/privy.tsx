@@ -15,6 +15,7 @@ export const PrivyProvider: React.FC<Props> = ({ children }) => {
   return (
     <PrivyProviderBase
       appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID!}
+      clientId={process.env.PRIVY_CLIENT_ID!}
       config={{
         appearance: {
           theme: "dark",

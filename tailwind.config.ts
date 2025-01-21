@@ -10,22 +10,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#E4E4E7",
+        foreground: "#D4D4D8",
         brand: {
-          "50": "#e7ffff",
-          "100": "#c1ffff",
-          "200": "#86fffb",
-          "300": "#41fff0",
-          "400": "#0dffe0",
-          "500": "#59CCCC",
-          "600": "#00d199",
-          "700": "#02a66d",
-          "800": "#0a8955",
-          "900": "#0f7445",
-          "950": "#042424",
+          "50": "#F5F5F7",
+          "100": "#EBEBEF",
+          "200": "#D7D7DF",
+          "300": "#C3C3CF",
+          "400": "#AFAFBF",
+          "500": "#9B9BAF",
+          "600": "#87879F",
+          "700": "#73738F",
+          "800": "#5F5F7F",
+          "900": "#4B4B6F",
+          "950": "#37375F",
         },
-
         text: {
           light: "#000000",
           dark: "#ffffff",
@@ -39,7 +38,7 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
-          active: "#59CCCC",
+          active: "#9B9BAF",
         },
       },
       borderRadius: {

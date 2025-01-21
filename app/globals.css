@@ -39,8 +39,8 @@ body {
       url("/bg-image.png");
   } */
   body {
-    background-image: linear-gradient(to bottom, #00000080, #012d2d80),
-      url("/bg-image.png");
+    background-image: linear-gradient(to bottom, #00000080, #000000),
+      url("/lines.png");
     background-size: 100% 100%;
     @apply text-black bg-cover bg-center dark:text-white bg-white dark:bg-neutral-900;
   }

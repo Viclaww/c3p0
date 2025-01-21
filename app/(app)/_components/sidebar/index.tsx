@@ -11,10 +11,7 @@ import {
 
 import SidebarGroup from "./group";
 
-import {
-  platformGroup,
-  // agentsGroup
-} from "../../_data";
+import { featuresgroup } from "../../_data";
 
 import AuthButton from "./auth-button";
 import ColorModeToggle from "./color-mode-toggle";
@@ -35,8 +32,7 @@ const Sidebar: React.FC<Props> = ({ children }) => {
         </SidebarHeader>
         <SidebarContent>
           <ChatsGroup />
-          <SidebarGroup group={platformGroup} />
-          {/* <SidebarGroup group={agentsGroup} /> */}
+          <SidebarGroup group={featuresgroup} />
         </SidebarContent>
       </SidebarUI>
       <SidebarInset>
