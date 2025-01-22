@@ -73,7 +73,7 @@ const Message: React.FC<Props> = ({
               : "text-brand-500 dark:text-brand-500"
           )}
         >
-          {message.role === "user" ? "You" : "Matrix"}
+          {message.role === "user" ? "You" : "C-3P0"}
         </p>
       </div>
       <div className="md:pt-2 w-full max-w-full md:flex-1 md:w-0 overflow-hidden flex flex-col gap-2">
