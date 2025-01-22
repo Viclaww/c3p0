@@ -15,8 +15,8 @@ export const featuresgroup: SidebarGroup = {
     },
     {
       icon: "ChartCandlestick",
-      label: "Trading",
-      href: "/trading",
+      label: "Trading(Coming Soon)",
+      href: "/",
     },
   ],
 };
