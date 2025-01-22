@@ -3,7 +3,7 @@
 import React from "react";
 
 import ChatInput from "./input";
-import StarterButtons from "./starter-buttons";
+// import StarterButtons from "./starter-buttons";
 
 import { cn } from "@/lib/utils";
 import Logo from "@/components/ui/logo";
@@ -27,7 +27,7 @@ const EmptyChat: React.FC = () => {
           </div>
         </div>
         <ChatInput />
-        <StarterButtons />
+        {/* <StarterButtons /> */}
       </div>
     </div>
   );
