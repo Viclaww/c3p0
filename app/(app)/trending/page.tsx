@@ -6,14 +6,10 @@ import NotLoggedInAlert from "../chat/_components/not-logged-in-alert";
 import { useChat } from "../chat/_contexts/chat";
 
 export default function Home() {
-  const { setInput, onSubmit } = useChat();
+  const { sendMessage } = useChat();
 
   useEffect(() => {
-    setInput("Trending tokens");
-
-    setTimeout(() => {
-      onSubmit();
-    }, 1000);
+    sendMessage("Trending tokens");
   }, []);
   return (
     <div className="h-full w-full">
