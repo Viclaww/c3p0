@@ -29,7 +29,7 @@ const Graph = () => {
   }
   return (
     <div className={`w-full h-full matrixbg font-bold ${titillium.className}`}>
-      <div className="w-full hidden bg-white absolute h-full">
+      <div className="w-full md:hidden bg-white absolute h-full">
         <video
           className="fixed w-full top-0 left-0 h-screen"
           ref={videoRef}
