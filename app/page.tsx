@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Titillium_Web } from "next/font/google";
-import LogoStunt from "./_components/logostunt";
+import LogoStunt, { ImageStunt } from "./_components/logostunt";
 // import InfoSection from "./_components/infoboxes";
 import LoginButton from "./_components/login-button";
 import { cn } from "@/lib/utils";
@@ -14,17 +14,24 @@ const titillium = Titillium_Web({
 
 const Graph = () => {
   const [isShowingLogoStunt, setIsShowingLogoStunt] = React.useState(true);
+  const [isShowingWalkin, setIsShowingWalkin] = React.useState(true);
 
   React.useEffect(() => {
     if (isShowingLogoStunt) {
       setTimeout(() => {
         setIsShowingLogoStunt(false);
       }, 4000);
+      setTimeout(() => {
+        setIsShowingWalkin(false);
+      }, 9000);
     }
   }, [isShowingLogoStunt]);
 
   if (isShowingLogoStunt) {
     return <LogoStunt showing={isShowingLogoStunt} />;
+  }
+  if(isShowingWalkin){
+    return <ImageStunt showing={isShowingWalkin}/>
   }
   return (
     <div className={`w-full h-full matrixbg font-bold ${titillium.className}`}>
