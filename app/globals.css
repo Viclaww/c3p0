@@ -34,10 +34,10 @@ body {
     --sidebar-active: 44, 100%, 41%;
   }
 
-  /* .matrixbg {
+  .matrixbg {
     background-image: linear-gradient(to bottom, #00000080, #012d2d80),
-      url("/bg-image.png");
-  } */
+      url("/lines.png");
+  }
 
   body {
     background-image: linear-gradient(to bottom, #00000080, #000000),

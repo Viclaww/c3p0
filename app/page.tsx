@@ -10,6 +10,7 @@ import Image from "next/image";
 const titillium = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
   subsets: ["latin"],
+  variable: "--ttw"
 });
 
 const Graph = () => {

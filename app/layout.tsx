@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import { Titillium_Web } from "next/font/google";
 import { DM_Sans, DM_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -16,6 +16,13 @@ const dmMono = DM_Mono({
   subsets: ["latin"],
 });
 
+const titillium = Titillium_Web({
+  weight: ["200", "300", "400", "600", "700", "900"],
+  subsets: ["latin"],
+  variable: "--ttw"
+});
+
+
 export const metadata: Metadata = {
   title: "C-3PO",
   description:
@@ -29,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${dmSans.variable} ${dmMono.variable} antialiased  `}>
+      <body className={`${dmSans.variable} ${dmMono.variable} ${titillium.variable} antialiased  `}>
         <Providers>{children}</Providers>
       </body>
     </html>

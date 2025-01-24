@@ -65,6 +65,9 @@ export default {
           },
         },
       },
+      fontFamily:{
+        ttW: "var(--ttw)"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
