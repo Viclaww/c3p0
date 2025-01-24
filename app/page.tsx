@@ -14,33 +14,23 @@ const titillium = Titillium_Web({
 
 const Graph = () => {
   const [isShowingLogoStunt, setIsShowingLogoStunt] = React.useState(true);
-  const videoRef = React.useRef<HTMLVideoElement | null>(null);
 
   React.useEffect(() => {
     if (isShowingLogoStunt) {
       setTimeout(() => {
         setIsShowingLogoStunt(false);
-        videoRef.current?.play();
       }, 4000);
     }
-  }, [isShowingLogoStunt, videoRef]);
+  }, [isShowingLogoStunt]);
 
   if (isShowingLogoStunt) {
     return <LogoStunt showing={isShowingLogoStunt} />;
   }
   return (
     <div className={`w-full h-full matrixbg font-bold ${titillium.className}`}>
-      {/* <div className="w-full md:hidden bg-white absolute h-full">
-        <video
-          className="fixed w-full top-0 left-0 h-screen"
-          ref={videoRef}
-          src="/c3p02.mp4"
-        />
-      </div> */}
-
       <div className="flex flex-col h-[100vh] items-center justify-center md:justify-start py-8 pb-4">
         <h3 className={cn("font-semibold text-xl", titillium.className)}>
-          C-P30
+          C-3PO
         </h3>
         <div className="w-4/5 flex flex-col-reverse md:flex-row px-3 justify-center md:justify-around gap-6 items-center text-center mt-8">
           <div className="w-full md:w-1/2 flex items-center justify-center mb-10">

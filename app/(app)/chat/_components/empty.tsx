@@ -22,7 +22,7 @@ const EmptyChat: React.FC = () => {
           <div className="flex flex-col gap-1">
             <h1 className="font-semibold text-center text-2xl">
               Interact with{" "}
-              <span className="text-brand-100 font-bold inline">C-P3O</span>
+              <span className="text-brand-100 font-bold inline">C-3PO</span>
             </h1>
           </div>
         </div>

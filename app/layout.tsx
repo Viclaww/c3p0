@@ -17,7 +17,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "C-P3O",
+  title: "C-3PO",
   description:
     "A modular network of interoperable DeFi agentsSmarter Tools, Trending Insights, and Effortless Trades – All in One Place",
 };
